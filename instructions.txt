@@ -1,0 +1,7 @@
+No terminal bash(linux), usamos o comando:
+
+>> export FLASK_APP=market.py
+para a variável de ambiente definir o nome da aplicação
+
+>> export FLASK_DEBUG=1
+para habilitar o modo Debug
