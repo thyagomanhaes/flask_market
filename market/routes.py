@@ -1,5 +1,7 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from market import app
+from flask import render_template
+from market.models import Item
+from market.forms import RegisterForm
 
 @app.route('/')
 def home_page():
@@ -12,8 +14,10 @@ def about(username):
 
 @app.route('/market')
 def market_page():
-    items = [
-        {'id': 0, 'name': 'Thyago'},
-        {'id': 1, 'name': 'Wendel'}
-    ]    
+    items = Item.query.all()
     return render_template('market.html', items=items)
+
+@app.route('/register')
+def register_page():
+    form = RegisterForm()
+    return render_template('register.html', form=form)

@@ -5,3 +5,15 @@ para a variável de ambiente definir o nome da aplicação
 
 >> export FLASK_DEBUG=1
 para habilitar o modo Debug
+
+
+Tivemos que criar um arquivo que contenha todos os models, chamado models.py
+e um arquivo que tenha todas as rotas chamado de routes.py
+
+Tem que resolver o problema de CIRCULAR IMPORTS
+
+tem que usar o conceito de PACKAGES em python
+
+We can bsically package our entire application in a directory for example called "market"
+
+então criamos um arquivo "run.py", que vai ser responsável por carregar todas as linhas necessários para todar a aplicação
