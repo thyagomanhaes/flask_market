@@ -17,3 +17,7 @@ tem que usar o conceito de PACKAGES em python
 We can bsically package our entire application in a directory for example called "market"
 
 então criamos um arquivo "run.py", que vai ser responsável por carregar todas as linhas necessários para todar a aplicação
+
+cuidado com ataque CSRF (Cross Site Request Forgery)
+
+in a python shell --> db.create_all() to create models in database
